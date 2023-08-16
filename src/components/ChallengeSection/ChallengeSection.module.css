@@ -1,0 +1,42 @@
+.challenge {
+  padding: 2rem;
+  font-family: Roboto;
+}
+.challenge__header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6699cc;
+}
+.challenge__content {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.challenge__block {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.challenge__block__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.challenge__block__subheader {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #6699cc;
+}
+.challenge__block__image {
+  max-width: 150px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .challenge__block {
+    flex-direction: column;
+  }
+  .challenge__block__image {
+    max-width: 100%;
+    align-self: center;
+  }
+}/*# sourceMappingURL=ChallengeSection.module.css.map */

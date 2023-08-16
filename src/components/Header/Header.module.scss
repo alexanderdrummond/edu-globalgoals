@@ -1,0 +1,121 @@
+.header {
+    background-color: rgb(37, 36, 36);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 5rem 1rem 2rem;
+    position: relative; 
+    font-family: 'Roboto', sans-serif;
+
+    &__logo {
+        height: 150px;
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 1rem;
+
+        &__titles {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__nav {
+        position: absolute; 
+        bottom: 1rem;       
+        right: 2rem;         
+        
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+
+        &__link {
+            text-decoration: none;
+            color: inherit;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+
+    .titles {
+        h1, h2 {
+            margin: 0;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+            color: white;
+            font-size: 4rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-weight: 300;
+            color: #3399ff;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 1rem 2rem;
+        justify-content: flex-start;
+
+        &__logo {
+            height: 120px; 
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+
+        &__content {
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-start;
+
+            &__titles {
+                margin-left: 0;
+            }
+        }
+
+        &__nav {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            left: 0; 
+
+            &__link {
+                padding: 0.5rem 0;
+            }
+        }
+
+        .titles {
+            h1 {
+                font-size: 1.5rem; 
+            }
+
+            h2 {
+                font-size: 1rem; 
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

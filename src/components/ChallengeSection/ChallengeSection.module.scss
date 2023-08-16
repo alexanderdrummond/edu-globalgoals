@@ -1,0 +1,55 @@
+
+
+.challenge {
+    padding: 2rem;
+    font-family: Roboto;
+
+    &__header {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #6699cc;
+    }
+
+    &__content {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &__block {
+        display: flex;
+        gap: 1rem; 
+        margin-bottom: 2rem;
+
+        &__text {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__subheader {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #6699cc;
+        }
+
+        &__image {
+            max-width: 150px; 
+            height: auto;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .challenge {
+        &__block {
+            flex-direction: column; 
+
+            &__image {
+                max-width: 100%; 
+                align-self: center; 
+            }
+        }
+    }
+}
