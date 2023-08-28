@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 
 const Footer = () => {
     return (
-        <div class="container">
+        <div className="container">
         <footer className={styles.footer}>
             <div className={styles.footer__column}>
                 <h2 className={styles.footer__column__title}>Eksterne Links:</h2>
